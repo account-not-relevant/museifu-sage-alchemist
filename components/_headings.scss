@@ -1,0 +1,60 @@
+//        FIX THIS SHIT
+
+:is(.markdown-source-view, .markdown-reading-view, .v-version-content-preview, .modal) :not(.callout-content)> :is(.HyperMD-header-1, h1):before {
+  content: "[🝰1🜲]";
+  font-size: 20px;
+  opacity: 0.5;
+  padding-right: 5px;
+  color: var(--header-symbol-colors);
+  text-shadow: 0px 0px 5px rgba(54, 56, 92, 0.452);
+}
+
+:is(.markdown-source-view, .markdown-reading-view, .v-version-content-preview, .modal) :not(.callout-content)> :is(.HyperMD-header-2, h2):before {
+  content: "[🝔2🜅]";
+  font-size: 18px;
+  opacity: 0.5;
+  padding-right: 5px;
+  color: var(--header-symbol-colors);
+  text-shadow: 0px 0px 5px rgba(54, 56, 92, 0.452);
+}
+
+:is(.markdown-source-view, .markdown-reading-view, .v-version-content-preview, .modal) :not(.callout-content)> :is(.HyperMD-header-3, h3):before {
+  content: "[🜊3🜍]";
+  font-size: 16px;
+  opacity: 0.5;
+  padding-right: 5px;
+  color: var(--header-symbol-colors);
+  text-shadow: 0px 0px 5px rgba(54, 56, 92, 0.452);
+}
+
+:is(.markdown-source-view, .markdown-reading-view, .v-version-content-preview, .modal) :not(.callout-content)> :is(.HyperMD-header-4, h4):before {
+  content: "[🝊4🜝]";
+  font-size: 14px;
+  opacity: 0.5;
+  padding-right: 5px;
+  color: var(--header-symbol-colors);
+  text-shadow: 0px 0px 5px rgba(54, 56, 92, 0.452);
+}
+
+:is(.markdown-source-view, .markdown-reading-view, .v-version-content-preview, .modal) :not(.callout-content)> :is(.HyperMD-header-5, h5):before {
+  content: "[5🜲]";
+  font-size: 14px;
+  padding-right: 5px;
+  color: var(--header-symbol-colors);
+  text-shadow: 0px 0px 5px rgba(54, 56, 92, 0.452);
+}
+
+:is(.markdown-source-view, .markdown-reading-view, .v-version-content-preview, .modal) :not(.callout-content)> :is(.HyperMD-header-6, h6):before {
+  content: "[🜲 EXPAND]";
+  font-size: 15px;
+  opacity: 1;
+  padding-right: 15px;
+  color: var(--header-symbol-colors);
+}
+
+:is(.markdown-source-view, .markdown-reading-view, .v-version-content-preview, .modal) :not(.callout-content)> :is(.HyperMD-header-6, h6) {
+  font-size: 15px;
+  background-color: var(--background-secondary);
+  padding: 20px;
+  border-radius: 2px;
+}

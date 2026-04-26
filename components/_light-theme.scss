@@ -1,0 +1,44 @@
+.theme-light {
+  --background-primary: var(--temporary-color-two);
+  --background-primary-alt: var(--light-cream);
+  --background-secondary: var(--temporary-color-two);
+  --background-secondary-alt: var(--dark-green-four-mod);
+
+  --text-normal: var(--light-earth-mod);
+  --text-muted: var(--dark-green-three);
+  --text-faint: var(--color-accent);
+
+  --theme-grid-color: var(--light-green-two);
+
+  --temporary-color-one: #90b487;
+  --temporary-color-two: #8EA58C;
+}
+
+/* new colors
+
+#8EA58C for background primary and secondary
+
+*/
+
+.theme-light .workspace-tab-header-container {
+    border-color: transparent;
+    background-color: var(--temporary-color-one);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+body:not(.is-mobile):is(.theme-light) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  background-color: var(--temporary-color-one) !important;
+  // order: unset;
+  border-radius: 15px;
+  position: relative;
+  padding-right: var(--size-4-2); // ?
+}
+
+
+.theme-light .titlebar-button-container.mod-right {
+  padding: 3px !important;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: var(--temporary-color-one) !important;
+}

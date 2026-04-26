@@ -1,0 +1,36 @@
+.theme-dark {
+  --background-primary: var(--dark-green-three);
+  --background-primary-alt: var(--light-cream);
+  --background-secondary: var(--dark-green-three);
+  --background-secondary-alt: var(--dark-green-three);
+
+  --text-normal: var(--dark-gray-two);
+  --text-muted: var(--dark-gray-one);
+  --text-faint: var(--color-accent);
+
+  --theme-grid-color: var(--dark-green-two);
+
+  --temporary-color-one: #10140a;
+}
+
+.theme-dark .workspace-tab-header-container {
+    border-color: transparent;
+    background-color: var(--temporary-color-one);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+body:not(.is-mobile):is(.theme-dark) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  background-color: var(--temporary-color-one);
+  // order: unset;
+  border-radius: 15px;
+  position: relative;
+  padding-right: var(--size-4-2);
+}
+
+.theme-dark .titlebar-button-container.mod-right {
+  padding: 3px !important;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: var(--temporary-color-one) !important;
+}

@@ -1,0 +1,32 @@
+:root * {
+  --canvas-dot-pattern: transparent;
+  --canvas-grid-size: 248px;
+  --canvas-grid-color: var(--theme-grid-color);
+}
+
+/*
+
+TO BE DONE HERE:
+It kind of pisses me off that the grid pattern
+doesn't move like the dot pattern. Find a way to
+do it, even if it means creating an svg background.
+
+*/
+
+.canvas-background {
+  background-image: linear-gradient(
+      0deg,
+      transparent 0px,
+      var(--canvas-grid-color) 1px,
+      var(--canvas-grid-color) 2px,
+      transparent 3px
+    ),
+    linear-gradient(
+      90deg,
+      transparent calc(var(--canvas-grid-size) - 3px),
+      var(--canvas-grid-color) calc(var(--canvas-grid-size) - 2px),
+      var(--canvas-grid-color) calc(var(--canvas-grid-size) - 1px),
+      transparent var(--canvas-grid-size)
+    );
+  background-size: var(--canvas-grid-size) var(--canvas-grid-size);
+}
